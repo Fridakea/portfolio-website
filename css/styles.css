@@ -1,0 +1,313 @@
+/* Darkmode styling */
+.dark-mode-only {
+    display: none;
+}
+
+.dark-mode .dark-mode-only {
+    display: block;
+}
+
+.dark-mode .dark-mode-hide {
+    display: none;
+}
+
+main {
+    padding-top: 75px;
+}
+
+/* Styling header */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--secondary-color);
+    z-index: 5;
+}
+
+nav {
+    height: 75px;
+    width: 100%;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+        color: var(--action-color);
+    }
+
+    & img {
+        width: 50px;
+        height: 100%;
+    }
+}
+
+nav.flex-top-right {
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding: 15px 25px 15px 15px;
+    gap: 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.mobile-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+
+    text-align: center;
+    font-size: 2rem;
+
+    & li {
+        margin: 16px 0;
+    }
+}
+
+.logo-burger-menu {
+    width: 200px;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.burger-icon {
+    cursor: pointer;
+}
+
+/* Burger-menu icon */
+.bar {
+    margin: 5px;
+    background-color: var(--action-color);
+    display: block;
+    width: 48px;
+    height: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger-icon .bar:nth-child(2) {
+    margin: 10px auto;
+}
+
+.burger-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active .bar:nth-child(1) {
+    transform: translateY(15px) rotate(45deg);
+}
+
+.burger-icon.active .bar:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+/* Styling the footer */
+footer {
+    background-color: var(--secondary-color);
+    padding: var(--spacing-medium);
+
+    & div {
+        max-width: 1000px;
+        margin: auto;
+
+        & p, h1 {
+            color: var(--action-color);
+        }
+    }
+}
+
+.hero-section {
+    width: 100%;
+    height: 92vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url('../images/light-mode.webp');
+    background-size: cover;
+    background-position: center;
+
+    & h1 {
+        margin-top: var(--spacing-large);
+        padding: 9vh 75px 0 75px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 4.5rem;
+        text-align: center;
+        line-height: 75px;
+    }
+}
+
+.dark-mode .hero-section {
+    background-image: url('../images/dark-mode.webp');
+}
+
+.square-img a {
+    text-decoration: none;
+}
+
+.square-image {
+    aspect-ratio: 1 / 1;
+    min-width: 375px;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: var(--action-color);
+    text-shadow: 3px 3px var(--primary-color);
+    text-align: center;
+}
+
+.square-image:hover {
+    text-decoration: underline;
+}
+
+.image-1 {
+    background-image: url("../images/billede3.webp");
+}
+
+.image-2 {
+    background-image: url("../images/billede1.webp");
+    background-position: top;
+}
+
+.image-3 {
+    background-image: url("../images/billede2.webp");
+}
+
+.image-4 {
+    background-image: url("../images/billede4.webp");
+    background-position: 70% 0;
+}
+
+.image-5 {
+    background-image: url("../images/billede5.webp");
+    background-size: 110%;
+    background-position: 0 95%;
+}
+
+/* Cards */
+.tertiary-color-card {
+    background-color: var(--tertiary-color);
+    padding: var(--spacing-medium);
+    margin-bottom: var(--spacing-extra-large);
+}
+
+.extra-tertiary-color-card {
+    background-color: var(--extra-tertiary-color);
+    padding: var(--spacing-medium);
+
+    box-shadow: -50px 50px var(--extra-tertiary-shadow-color);
+    margin-left: var(--spacing-extra-large);
+    margin-bottom: 100px;
+}
+
+.brand-color-card {
+    background-color: var(--brand-color);
+    padding: var(--spacing-medium);
+    margin-bottom: var(--spacing-extra-large);
+    max-width: 500px;
+}
+
+/* Cards placement styling */
+.overlay-section {
+    position: relative;
+    height: 850px;
+    width: 100%;
+}
+
+.upper-left {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -12px;
+    right: 20%;
+}
+
+.lower-right {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    max-width: 400px;
+
+
+    bottom: 0;
+    right: -12px;
+}
+
+.shadow-color-shadow.pc-margin-special-top {
+    margin-top: 100px;
+}
+
+/* Shadows */
+.shadow-color-shadow {
+    box-shadow: -50px -50px var(--shadow-color);
+    margin-left: var(--spacing-extra-large);
+    margin-top: var(--spacing-extra-large);
+    margin-bottom: var(--spacing-extra-large);
+}
+
+.extra-tertiary-color-shadow {
+    box-shadow: var(--spacing-extra-large) var(--spacing-extra-large) var(--extra-tertiary-color);
+    margin-right: var(--spacing-extra-large);
+    margin-bottom: 100px;
+}
+
+.action-color-shadow {
+    box-shadow: var(--spacing-extra-large) var(--spacing-extra-large) var(--action-color);
+    margin-right: var(--spacing-large);
+    margin-bottom: 100px;
+}
+
+/* Images and videoes */
+.self-portrait {
+    object-fit: cover;
+
+    max-width: 565px;
+    max-height: 350px;  
+    margin-bottom: var(--spacing-extra-large);
+}
+
+.mobile-website-img {
+    max-width: 500px;
+    height: 100%;
+    padding: 0 50px 0 50px;
+    margin-bottom: var(--spacing-extra-large);
+}
+
+.pc-website-img {
+    max-width: 800px;
+    height: 100%;
+    padding: 0 var(--spacing-extra-large) 0 var(--spacing-extra-large);
+    margin-bottom: var(--spacing-extra-large);
+}
+
+.website-img-horizontal {
+    min-width: 270px;
+    aspect-ratio: 16 / 9;
+    margin-bottom: var(--spacing-extra-large);
+}

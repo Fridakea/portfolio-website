@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Om mig er en underside til Fridas portfolie website med content fra første semester på KEA. Om mig indeholder infomation om Frida samt en kort version af hendes CV.">
+    <title>Om mig</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pc-style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <nav class="flex-top-right">
+            <div class="horizontal-layout">
+                <a href="index.html"><img class="logo dark-mode-hide" src="icons/logo-lightmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                <a href="index.html"><img class="logo dark-mode-only" src="icons/logo-darkmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+
+                <div class="pc-menu pc-only">
+                    <a href="om-mig.html">Om mig</a>
+                    <a href="f2.html">Forløb 2</a>
+                    <a href="f3.html">Forløb 3</a>
+                    <a href="f4.html">Forløb 4</a>
+                    <a href="f5.html">Forløb 5</a>
+                </div>
+
+                <img class="dark-mode-hide" src="icons/dark-light-icon-for-lightmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+                <img class="dark-mode-only" src="icons/dark-light-icon-for-darkmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+            </div>
+
+            <ul class="mobile-menu">
+                <li class="menu-link flex-col flex-center">
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-hide" src="icons/logo-lightmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-only" src="icons/logo-darkmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                </li>
+
+                <li class="menu-link"><a href="om-mig.html">Om mig</a></li>
+                <li class="menu-link"><a href="f2.html">Forløb 2</a></li>
+                <li class="menu-link"><a href="f3.html">Forløb 3</a></li>
+                <li class="menu-link"><a href="f4.html">Forløb 4</a></li>
+                <li class="menu-link"><a href="f5.html">Forløb 5</a></li>
+            </ul>
+
+            <div class="burger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="flex-col flex-center pc-grid-2-1">
+            <div class="margin-bottom">
+                <h1>Om mig</h1>
+                <p>Mit navn er Frida Alberte Bendorff. Jeg er 22 år gammel og bor på Østerbro med min kæreste Mark
+                    og min hund Mokka.</p>
+                <p>Jeg elsker at udfolde mig kreativt med aktiviteter som at strikke, sy, lave smykker, male, tage
+                    billeder,
+                    lave keramik og meget mere. Jeg har altid haft en særlig stor interesse for at tage billeder. Det
+                    kommer nok af at min far er fotograf.</p>
+                <p>Det var min kreative interesse som ansporede mig til at begynde på Multimediedesign.</p>
+                <p>Jeg er meget glad for mit valg af studie. Her bliver jeg udfordret og
+                    lærer nye ting. Jeg glæder mig til at se hvor jeg ender.</p>
+            </div>
+
+            <img class="self-portrait shadow-color-shadow" src="images/selfportrait.webp"
+                alt="Billede af mig med farverig baggrund">
+        </div>
+
+        <div class="tertiary-color-card">
+            <h1>Mine erfaringer</h1><br />
+            <h3>* Nov. 2013 - nu: CISV, international fredsorganisation, frivillingt arbejde</h3>
+            <p>Min erfaring fra CISV indebærer afholdese og planlægning af events og aktiviteter, kontakt med andre
+                mennesker i forskellige aldre, og fra både in- og udland, undervisning samt meget
+                mere.
+            </p><br />
+
+            <h3>* Jul. 2014-sep. 2022: PhotoCare Hvidovre</h3>
+            <p>Hos Photocare har jeg udført arbejde med alt fra rengøring til pakning af billeder, butiksbetjening
+                og senere produktion af billeder og redigeringsarbejde.</p><br />
+
+            <h3>* Nov. 2018-jul. 2023: Imerco Home Friheden og næsten hele KBH</h3>
+            <p>Erfaring med kundebetjening, varekendskab samt salgserfaring. Jeg var ansat som
+                flyver og har hjulpet til i næsten alle Imerco'er i København samt Ishøj, Greve, Solrød Strand,
+                Køge, Glostrup m.m.</p><br />
+
+            <h3>* Okt. 2022-sep. 2023: Regus Management, fuldtids Community Associate</h3>
+            <p>Arbejdet involverede en masse administration og kundekontakt på både dansk og engelsk. Jeg havde delt
+                ansvar for en kontorbygning på Østerfælled torv.</p><br />
+
+            <h3>* Aug. 2023-nu: Bendorff Design, min egen virksomhed</h3>
+            <p>I forbindelse med studiestart startede jeg min egen virksomhed med formålet i at lave freelance
+                arbejde og skabe erfaringer der igennem. Her har jeg varetaget små fremstillingsopgaver.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex-col flex-center pc-flex-row pc-space-between">
+            <p class="pc-only">frbe0002@stud.kea.dk</p>
+            <h1>FRIDA ALBERTE BENDORFF</h1>
+            <p>studerende på kea f 2023 - f 2025</p>
+            <p class="pc-hide">frbe0002@stud.kea.dk</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

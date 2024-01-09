@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forside af Fridas portfolie website med content fra første semester på KEA">
+    <title>Fridas portfolie website</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pc-style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <nav class="flex-top-right">
+            <div class="horizontal-layout">
+                <a href="index.html"><img class="logo dark-mode-hide" src="icons/logo-lightmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                <a href="index.html"><img class="logo dark-mode-only" src="icons/logo-darkmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+
+                <div class="pc-menu pc-only">
+                    <a href="om-mig.html">Om mig</a>
+                    <a href="f2.html">Forløb 2</a>
+                    <a href="f3.html">Forløb 3</a>
+                    <a href="f4.html">Forløb 4</a>
+                    <a href="f5.html">Forløb 5</a>
+                </div>
+
+                <img class="dark-mode-hide" src="icons/dark-light-icon-for-lightmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+                <img class="dark-mode-only" src="icons/dark-light-icon-for-darkmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+            </div>
+
+            <ul class="mobile-menu">
+                <li class="menu-link flex-col flex-center">
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-hide" src="icons/logo-lightmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-only" src="icons/logo-darkmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                </li>
+
+                <li class="menu-link"><a href="om-mig.html">Om mig</a></li>
+                <li class="menu-link"><a href="f2.html">Forløb 2</a></li>
+                <li class="menu-link"><a href="f3.html">Forløb 3</a></li>
+                <li class="menu-link"><a href="f4.html">Forløb 4</a></li>
+                <li class="menu-link"><a href="f5.html">Forløb 5</a></li>
+            </ul>
+
+            <div class="burger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-section">
+            <h1 class="pc-hide">Frida<br />Alberte<br />Bendorff</h1>
+            <h1 class="pc-only">Frida Alberte Bendorff</h1>
+            <div class="bg-image"></div>
+        </div>
+
+        <div class="content padding-top-normal">
+            <div class="tertiary-color-card extra-tertiary-color-shadow pc-extra-margin-on-sides">
+                <h1>Portfolie website</h1>
+                <p>Se hvad jeg har lært gennem mit første semester på multimediedesign på KEA. På sitet kan du se
+                    indhold
+                    om mig og om forløb 2-5.</p>
+                <p>Sitet indeholder viden, teori og formåen jeg har tilegnet mig under forløbene. Det
+                    omfatter alt fra erfaring med Adobe's programmer - Photoshop, Premier Pro, Illustrator - til
+                    designredskaber, research og analysemodeller, samt kodningsredskaber til fremstilling af endelige
+                    sites.</p>
+                <p>Alle billeder som fremgår på mit site er fra tidligere forløb, lavet til dette site eller taget og
+                    redigeret af mig.</p>
+            </div>
+
+            <div class="pc-flex-row square-img pc-gab-large margin-bottom-on-all flex-col flex-center">
+                <a href="om-mig.html">
+                    <div class="square-image image-1">om mig</div>
+                </a>
+                <a href="f2.html">
+                    <div class="square-image image-2">forløb 2</div>
+                </a>
+                <a href="f3.html">
+                    <div class="square-image image-3">forløb 3</div>
+                </a>
+                <a href="f4.html">
+                    <div class="square-image image-4">forløb 4</div>
+                </a>
+                <a href="f5.html">
+                    <div class="square-image image-5">forløb 5</div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex-col flex-center pc-flex-row pc-space-between">
+            <p class="pc-only">frbe0002@stud.kea.dk</p>
+            <h1>FRIDA ALBERTE BENDORFF</h1>
+            <p>studerende på kea f 2023 - f 2025</p>
+            <p class="pc-hide">frbe0002@stud.kea.dk</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

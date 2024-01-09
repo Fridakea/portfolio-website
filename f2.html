@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Forløb 2 er en underside til Fridas portfolie website med content fra første semester på KEA. Undersiden indeholder indhold fra forløb 2 samt det endelige resultat studiestartsprøven.">
+    <title>Forløb 2</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pc-style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <nav class="flex-top-right">
+            <div class="horizontal-layout">
+                <a href="index.html"><img class="logo dark-mode-hide" src="icons/logo-lightmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                <a href="index.html"><img class="logo dark-mode-only" src="icons/logo-darkmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+
+                <div class="pc-menu pc-only">
+                    <a href="om-mig.html">Om mig</a>
+                    <a href="f2.html">Forløb 2</a>
+                    <a href="f3.html">Forløb 3</a>
+                    <a href="f4.html">Forløb 4</a>
+                    <a href="f5.html">Forløb 5</a>
+                </div>
+
+                <img class="dark-mode-hide" src="icons/dark-light-icon-for-lightmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+                <img class="dark-mode-only" src="icons/dark-light-icon-for-darkmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+            </div>
+
+            <ul class="mobile-menu">
+                <li class="menu-link flex-col flex-center">
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-hide" src="icons/logo-lightmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-only" src="icons/logo-darkmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                </li>
+
+                <li class="menu-link"><a href="om-mig.html">Om mig</a></li>
+                <li class="menu-link"><a href="f2.html">Forløb 2</a></li>
+                <li class="menu-link"><a href="f3.html">Forløb 3</a></li>
+                <li class="menu-link"><a href="f4.html">Forløb 4</a></li>
+                <li class="menu-link"><a href="f5.html">Forløb 5</a></li>
+            </ul>
+
+            <div class="burger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content flex-col flex-center">
+        <div class="flex-col flex-center pc-flex-row pc-gab-large">
+            <div class="extra-tertiary-color-card">
+                <h1>Grundlæggende designteori</h1>
+                <p>Tema 2 præsenterede os for basal designteori som gestaltlove, typografi, farveteori,
+                    kontraster og afstande m.m. Designteorien har gjort det muligt for mig at skabe et design som,
+                    udover at være pænt, også er designet med henblik på overskuelighed, brugervenlighed og
+                    tilgængelighed.</p>
+                <p>Når det kommer til design skal alle elementer have et formål i det endelige resultat. Alt man
+                    implemterer bør derfor også være velovervejet på forhånd. Det
+                    gælder både farvepaletten, størrelser på margin og padding, tekststørrelser og meget andet. Disse
+                    grundlæggende
+                    designprincipper har åbnet mine øjne for hvordan elementer kan interagerer visuelt for at gøre et
+                    design sammenhængende og æstetisk.</p>
+            </div>
+            <div class="tertiary-color-card flex-col flex-center">
+                <h1>Studiestartsprøven</h1>
+                <p>I forløbet blev vi introduceret til kodning af hjemmesider i CSS og HTML. Vi havde særligt fokus på
+                    css grid og flexbox, og hvordan man kan bruge det til at layoute en hjemmeside. Disse kan bruges på
+                    mange forskellige
+                    måder til at arbejde med organisering af elementer og afsnit i forskellig kompleksitetsgrad.</p>
+                <p>Det var
+                    også i løbet af tema 2 at vi har lært om media queries og har arbejdet med at lave responsivt
+                    design.
+                    Responsivitet gør det muligt at modernisere en hjemmeside så den
+                    kan bruges på mange device størelser. Media queries kan bruges når et design skal tilpasse sig
+                    adaptivt, fremfor responsivt.</p>
+                <p>Klik på linket herunder for at se det færdige resultat fra tema 2.</p><br />
+                <a class="link-button" href="https://fridabendorff.dk/kea/02_web/01_website/website_m_burgermenu/">til
+                    forløb 2</a>
+            </div>
+        </div>
+
+        <img class="pc-website-img pc-only" src="images/website-forlob2.webp"
+            alt="Billede af hjemmeside lavet i forløb 2">
+        <img class="mobile-website-img pc-hide" src="images/forlob2-billede.webp"
+            alt="Billede af hjemmeside lavet i forløb 2">
+    </main>
+
+    <footer>
+        <div class="flex-col flex-center pc-flex-row pc-space-between">
+            <p class="pc-only">frbe0002@stud.kea.dk</p>
+            <h1>FRIDA ALBERTE BENDORFF</h1>
+            <p>studerende på kea f 2023 - f 2025</p>
+            <p class="pc-hide">frbe0002@stud.kea.dk</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

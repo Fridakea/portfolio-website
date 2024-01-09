@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Forløb 4 er en underside til Fridas portfolie website med content fra første semester på KEA. Undersiden indeholder indhold fra forløb 4 samt det endelige resultat hjemmesiden til spillet Home Builder.">
+    <title>Forløb 4</title>
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pc-style.css">
+
+    <link class="dark-mode-hide" rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link class="dark-mode-hide" rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+</head>
+
+<body>
+    <header>
+        <nav class="flex-top-right">
+            <div class="horizontal-layout">
+                <a href="index.html"><img class="logo dark-mode-hide" src="icons/logo-lightmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                <a href="index.html"><img class="logo dark-mode-only" src="icons/logo-darkmode.svg"
+                        alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+
+                <div class="pc-menu pc-only">
+                    <a href="om-mig.html">Om mig</a>
+                    <a href="f2.html">Forløb 2</a>
+                    <a href="f3.html">Forløb 3</a>
+                    <a href="f4.html">Forløb 4</a>
+                    <a href="f5.html">Forløb 5</a>
+                </div>
+
+                <img class="dark-mode-hide" src="icons/dark-light-icon-for-lightmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+                <img class="dark-mode-only" src="icons/dark-light-icon-for-darkmode.svg" onclick="toggleDarkMode()"
+                    alt="Ikon til at skifte mellem light- eller darkmode">
+            </div>
+
+            <ul class="mobile-menu">
+                <li class="menu-link flex-col flex-center">
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-hide" src="icons/logo-lightmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                    <a href="index.html"><img class="logo-burger-menu dark-mode-only" src="icons/logo-darkmode.svg"
+                            alt="Logo som forestiller et kamera med et F i linsen, og der står 'Bendorff' under"></a>
+                </li>
+
+                <li class="menu-link"><a href="om-mig.html">Om mig</a></li>
+                <li class="menu-link"><a href="f2.html">Forløb 2</a></li>
+                <li class="menu-link"><a href="f3.html">Forløb 3</a></li>
+                <li class="menu-link"><a href="f4.html">Forløb 4</a></li>
+                <li class="menu-link"><a href="f5.html">Forløb 5</a></li>
+            </ul>
+
+            <div class="burger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="pc-grid-1-1 pc-gab-large margin-bottom-on-all margin-bottom">
+            <img class="grid-placement-upper-double pc-margin-0" src="images/home-builders-assets.webp"
+                alt="Billede af illustrationer lavet i Adobe Illustrator som bruges i spillet Home Builder">
+
+            <div class="grid-placement-upper-single pc-margin-0">
+                <h1>Adobe Illustrator</h1>
+                <p>I forløb fire blev vi introduceret til Adobe Illustrator og lavede selv vores spilkomponenter ved
+                    hjælp
+                    af vektorgrafik. Det gav anledning til at bruge teori omkring forskellige stilarter til at vælge
+                    stil og kunst til vores eget spil.</p>
+                <p>Stilarten i mit spil er ret utraditionel og bryder en del
+                    konventioner som asymmetri, tydelige øjne samt en baggrund uden mening i det gyldne snit. Min stil
+                    er meget
+                    inspireret af Jerome Masis’ stil, som er flat design med meget simple illustrationer.</p>
+                <p>Til højre ses nogle af de illustrationer jeg har lavet til spillet Home Builders.</p>
+            </div>
+
+            <img class="grid-placement-lower-double" src="images/diagrams.webp" alt="State machine diagram">
+
+            <div class="grid-placement-lower-single">
+                <h1>Diagrammer</h1>
+                <p>Som en del af processen med at lave vores spil lærte vi om aktivitetsdiagrammer og state machine
+                    diagrammer. Disse diagrammer bruges til at vise et flow og hvordan hændelser relateres til hinanden
+                    i et program. Ud fra disse diagrammer kan man se hvad der sker trin for trin når man spiller og
+                    hvordan
+                    man vinder eller taber.</p>
+                <p>State machine diagrammer er mere avancerede end
+                    aktivitetsdiagrammer fordi det viser alle komponenter i spillet, samt hvad de leder op til og
+                    opstår af. Her bruges specifikke navne til funktionerne hvilket der ikke gøres i
+                    aktivitetsdiagrammer.</p>
+            </div>
+        </div>
+
+        <div class="tertiary-color-card shadow-color-shadow">
+            <h1>Koden bag spillet, JavaScript</h1>
+            <p>I tema 3 blev vi introduceret til programeringssproget JavaScript, som vi brugte til at kode vores
+                spil. JavaScript er et kodesprog som benytter camelCasing hvilket betyder at man skriver funktioner og
+                andet i JS uden mellemrum og hvor hvert nyt ord har et stort forbogstav. Viden om denne detalje om JS
+                har været med til at gøre det meget nemmere for mig at forstå hvordan man læser koden.</p>
+            <h2>Forkorte kode</h2>
+            <p>I forløbet lærte vi også hvordan man kan forkorte sin kode ved at benytte variable til at tilgå
+                elementer i stedet for at finde det i dokumentet hver gang. Eks. hvis jeg vil have tilføjet en event
+                listener til et element kan jeg benytte <code>querySelector</code>, <code>getElementsById</code> eller
+                <code>getElementsByClassName</code>
+                efter behov. Jeg kan også definere en variabel som gemmer elementet til nemmere brug. I stedet for at
+                skrive: <code>document.querySelector(“#my-example”)</code> hver gang jeg skal bruge
+                elementet kan jeg definere en variabel:
+                <code>let myExample = document.querySelector(“#my-example”);</code> og bruge den til at tilgå elementet:
+                <code>myExcample.addEventListener(…)</code>
+            </p><br />
+            <h2>JS funktioner</h2>
+            <p>I mit spil benytter jeg eventlisteners mange gange, da spillet går ud på at man skal klikke på ting og
+                undgå andre. Derfor har jeg eventlisteners på alle de ting der skal klikkes på, så det giver point,
+                siger
+                lyde m.m. Samtidig har jeg også eventlisteners på alle de ting der ikke må klikkes på i spillet, så det
+                siger
+                en anden lyd, gør at man mister liv og afspiller en animation. Derfor er funktionen
+                <code>addEventListener</code> en af de funktioner jeg bruger mest i mit spil, og som jeg har fået meget
+                glæde af at
+                lære om.
+            </p>
+            <p>Andre funktioner jeg bruger meget i mit spil er <code>classList.add</code> og
+                <code>classList.remove</code>. Det er igen
+                super smarte funktioner som gør det muligt at henholdsvis fjerne eller tilføje classnames til et
+                element.
+                Det bruger jeg i mit spil når mine spilkomponenter skal have tilføjet eller fjernet animationer, når et
+                element skal have tilføjet forsinkelser eller en ny position i spillet m.m.
+            </p>
+            <div class="flex-col flex-center">
+                <a class="link-button" href="https://fridabendorff.dk/kea/04_animation/website/index.html">Til
+                    forløb 4</a>
+            </div>
+        </div>
+
+        <img class="margin-bottom extra-tertiary-color-shadow" src="images/home-builders.gif"
+            alt="Video af spillet Home Builders som GIF">
+    </main>
+
+    <footer>
+        <div class="flex-col flex-center pc-flex-row pc-space-between">
+            <p class="pc-only">frbe0002@stud.kea.dk</p>
+            <h1>FRIDA ALBERTE BENDORFF</h1>
+            <p>studerende på kea f 2023 - f 2025</p>
+            <p class="pc-hide">frbe0002@stud.kea.dk</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

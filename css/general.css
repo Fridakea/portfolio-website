@@ -1,0 +1,131 @@
+@import url('theme.css');
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:ital@1&display=swap');
+
+/* Reset */
+* {
+    margin: 0; padding: 0; box-sizing: border-box; 
+    font-family: 'Fraunces', serif;
+    color: var(--text-color);
+}
+
+img { 
+    width: 100%; height: auto; display: block; 
+}
+
+/* Styling text */
+header, footer, footer p, footer h1, a  {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    font-style: italic;
+    font-size: 0.9rem
+}
+
+/* Styling body */
+body {
+    background-color: var(--primary-color);
+}
+
+/* General classnames */
+.pc-only {
+    display: none;
+}
+
+.content {
+    max-width: 1050px;
+    margin: auto;
+    padding: 125px var(--spacing-large) 0 var(--spacing-large);
+
+    & div {
+        & p {
+            margin-bottom: var(--spacing-small);
+        }
+    }
+}
+
+.content.padding-top-normal {
+    padding-top: var(--spacing-extra-large);
+}
+
+/* General classnames for flex */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Classnames for spacing */
+.margin-top {
+    margin-top: 100px;
+}
+
+.margin-bottom {
+    margin-bottom: var(--spacing-extra-large);
+}
+
+.margin-bottom-on-all {
+    & div, img {
+        margin-bottom: var(--spacing-extra-large);
+    }
+}
+
+/* Styling links/buttons */
+a {
+    cursor: pointer;
+}
+
+a.link-button {
+    padding: 10px 30px;
+    background-color: var(--action-color);
+
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+a.link-button-outline {
+    padding: 5px 30px;
+    background-color: transparent;
+    border: 5px solid var(--action-color);
+
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+a.link-button:hover, a.link-button-outline:hover {
+    text-decoration: underline;
+}
+
+.inline-block {
+    display: inline-block;
+}

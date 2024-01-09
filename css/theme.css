@@ -1,0 +1,35 @@
+/* Variables for website - Lightmode */
+:root {
+    --primary-color:#F0F0F0;
+    --secondary-color: #ffffff;
+    --tertiary-color: #D7D7D7;
+    
+    --text-color: #393B39;
+    --action-color: #9a6c5b;
+    
+    --brand-color: #ca9681;
+    --shadow-color: #c5a2ab;
+    
+    --extra-tertiary-color: #b2cae5;
+    --extra-tertiary-shadow-color: #59718e;    
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 25px;
+    --spacing-extra-large: 50px;
+}
+
+.dark-mode {
+    --primary-color:#252725;
+    --secondary-color: #161616;
+    --tertiary-color: #393B39;
+    
+    --text-color: #F0F0F0;
+    --action-color: #ca9681;
+    
+    --brand-color: #9a6c5b;
+    --shadow-color: #71525A;
+    
+    --extra-tertiary-color: #59718e;
+    --extra-tertiary-shadow-color: #b2cae5;  
+}
