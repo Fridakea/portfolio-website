@@ -88,7 +88,7 @@
         margin-bottom: var(--spacing-extra-large);
     }
 
-    .pc-no-margin-buttom {
+    .pc-no-margin-bottom {
         margin-bottom: 0;
     }
 
@@ -103,6 +103,10 @@
 
     .pc-extra-margin-on-sides {
         margin: 0 200px 100px 150px;
+    }
+
+    .shadow-color-shadow.margin-top.pc-no-margin-top {
+        margin-top: 0;
     }
 
     /* Specific flex and grid */
@@ -197,13 +201,13 @@
 
 @media (min-width: 950px) {
     .pc-margin-special-bottom {
-        margin-left: 50px;
-        margin-right: 100px;
+        margin-left: 25px;
+        margin-right: 75px;
     }
 
     .pc-margin-special-top {
-        margin-left: 100px;
-        margin-right: 50px;    
+        margin-left: 75px;
+        margin-right: 25px;    
     }
 
     .pc-grid-1-2-1 {

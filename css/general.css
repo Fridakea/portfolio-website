@@ -82,7 +82,7 @@ body {
 
 
 /* Classnames for spacing */
-.margin-top {
+.margin-top, .shadow-color-shadow.margin-top {
     margin-top: 100px;
 }
 
